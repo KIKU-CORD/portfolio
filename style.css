@@ -1,0 +1,181 @@
+/*メイン設定*/
+
+body {
+  background-color:white;
+}
+
+/*レイアウト*/
+
+.title {
+  height: 120px;
+}
+.title h1 {
+  padding: 15px;
+  text-align: center;
+  color: #51EB32;
+  text-shadow: 1px 2px 5px #4DCF33;
+  position: relative;
+}
+.title #port {
+  font-size: 18px;
+  color: white;
+  text-shadow: 0px 0px 10px black;
+}
+.profile {
+	display: flex;
+	position: relative;
+	background: linear-gradient(45deg, white, green);
+}
+.profile img {
+	padding: 30px;
+	position: relative;
+	left: calc(50% - 390px);
+}
+.profile p {
+	padding: 15px;
+	position: relative;
+	left: calc(50% - 390px);
+	color: white;
+	text-shadow: 1px 2px 5px black;
+  	letter-spacing: 0.05em;
+  	line-height: 38.5px;
+  	font-weight: bold;
+}
+.box {
+	padding: 30px;
+	display: flex;
+	position: relative;
+	animation-name:fadeInAnime;
+  	animation-duration:2s;
+  	animation-fill-mode:forwards;
+  	animation-delay: 0s;
+  	opacity:0;
+}
+.box h1 {
+	color: black;
+	text-align: center;
+	text-shadow: 1px 2px 5px #B6B6B6;
+}
+.box #skill {
+	position: relative;
+	left: calc(50% - 500px);
+	width: 400px;
+	height: 200px;
+	background: linear-gradient(45deg, #00ff00, green);
+	padding: 20px;
+	border-radius: 30px;
+}
+.box #skill1 {
+	background-color: white;
+	padding: 5px;
+	width: 390px;
+	height: 190px;
+	border-radius: 20px;
+}
+.box #sikaku {
+	position: relative;
+	left: calc(50% - 390px);
+	width: 400px;
+	height: 200px;
+	background: linear-gradient(45deg, #00ff00, green);
+	padding: 20px;
+	border-radius: 30px;
+}
+.box #sikaku1 {
+	background-color: white;
+	padding: 5px;
+	width: 390px;
+	height: 190px;
+	border-radius: 20px;
+}
+.box ul li {
+	letter-spacing: 0.05em;
+	font-size: 18px;
+	font-weight: bold;
+}
+.box p {
+	letter-spacing: 0.05em;
+	position: relative;
+	left: 15px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.sakuhin {
+	animation-name:fadeInAnime;
+  	animation-duration:2s;
+  	animation-fill-mode:forwards;
+  	animation-delay: 0s;
+  	opacity:0;
+}
+.sakuhin a {
+	display: block;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+    	height: 100%;
+}
+.sakuhin h1 {
+  	text-align: center;
+  	text-shadow: 1px 2px 5px #B6B6B6;
+  	position: relative;
+}
+.greeting {
+	-webkit-box-sizing: border-box;
+    	-moz-box-sizing: border-box;
+    	box-sizing: border-box;
+    	-webkit-transition: all 0.5s ease-out;
+    	transition: all 0.5s ease-out;
+   	background: -webkit-linear-gradient(180deg, #ffffff#000000,#868686,#3d3d3d);
+    	background: -webkit-linear-gradient(right, #868686,#3d3d3d,#000000,#ffffff);
+    	background: linear-gradient(270deg,green,#00ff00,#ffffff,#ffffff);
+    	background-position: 1% 50%;
+    	background-size: 300% 300%;
+	position: relative;
+	left: calc(50% - 200px);
+	width: 400px;
+	height: 450px;
+	border-radius: 30px;
+	border: none;
+    	border: 4px solid #050505;
+}
+.greeting h1 {
+	font-size: 25px;
+	font-weight: bold;
+	text-shadow: 1px 2px 5px white;
+}
+.greeting img {
+	padding: 20px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+ 	-webkit-transform: translateX(-50%);
+  	-ms-transform: translateX(-50%);
+}
+.greeting p {
+	text-align: center;
+	position: relative;
+	left: 20px;
+	width: 360px;
+	height: 150px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.greeting:hover {
+	background-position: 99% 50%;
+    	color: #ffffff;
+	text-shadow: 1px 2px 5px black;
+    	border: 4px solid #000000;
+    	cursor: pointer;
+}
+
+/*アニメーション*/
+
+@keyframes fadeInAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
